@@ -1,0 +1,30 @@
+<div class="containter">
+    <div class="row" style="margin: 200px 0">
+        <div class="col">
+            {{!-- admin/login no se me auto completo --}}
+            <form action="/admin/login" method="post">
+                <div class="form-grup">
+                    <input type="text" class="form-control" placeholder="Usuario" name="usuario">
+
+
+                </div>
+
+                <div class="form-grup">
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+
+        </div>
+
+        {{#if error}}
+        <p>Usuario o clave incorrecto.</p>
+        {{/if}}
+
+    </div>
+
+
+
+</div>
